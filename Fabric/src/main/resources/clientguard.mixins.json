@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.playl.clientguard.amixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+  ],
+  "client": [
+    "ClientDis",
+    "DebugTitle",
+    "WindowTitle"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+  }

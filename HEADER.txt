@@ -1,4 +1,4 @@
-MIT License
+This file is part of ClientGuard, MIT License
 
 Copyright (c) 2022 D3it7i
 Copyright (c) contributors

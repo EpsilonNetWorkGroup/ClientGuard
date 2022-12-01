@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClientGuard", "ClientGuard\ClientGuard.vcxproj", "{F521850C-738B-481F-903E-26F737D6ED03}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DriverGuard", "DriverGuard\DriverGuard.vcxproj", "{55896776-A21B-4E04-9317-93832E15DE29}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Shared", "Sharded\Sharded.vcxitems", "{43E13768-4B27-45EF-A0DC-7A34A6C9B871}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F521850C-738B-481F-903E-26F737D6ED03}.Debug|x64.ActiveCfg = Debug|x64
+		{F521850C-738B-481F-903E-26F737D6ED03}.Debug|x64.Build.0 = Debug|x64
+		{F521850C-738B-481F-903E-26F737D6ED03}.Release|x64.ActiveCfg = Release|x64
+		{F521850C-738B-481F-903E-26F737D6ED03}.Release|x64.Build.0 = Release|x64
+		{55896776-A21B-4E04-9317-93832E15DE29}.Debug|x64.ActiveCfg = Debug|x64
+		{55896776-A21B-4E04-9317-93832E15DE29}.Debug|x64.Build.0 = Debug|x64
+		{55896776-A21B-4E04-9317-93832E15DE29}.Debug|x64.Deploy.0 = Debug|x64
+		{55896776-A21B-4E04-9317-93832E15DE29}.Release|x64.ActiveCfg = Release|x64
+		{55896776-A21B-4E04-9317-93832E15DE29}.Release|x64.Build.0 = Release|x64
+		{55896776-A21B-4E04-9317-93832E15DE29}.Release|x64.Deploy.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96767211-19AD-446E-8939-7E7381F37821}
+	EndGlobalSection
+EndGlobal

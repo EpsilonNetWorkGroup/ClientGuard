@@ -1,0 +1,77 @@
+;
+; DriverGuard.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System ; TODO: specify appropriate Class
+ClassGuid={4d36e97d-e325-11ce-bfc1-08002be10318} ; TODO: specify appropriate ClassGuid
+Provider=%ManufacturerName%
+CatalogFile=DriverGuard.cat
+DriverVer= ; TODO: set DriverVer in stampinf property pages
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir = 12
+DriverGuard_Device_CoInstaller_CopyFiles = 11
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+DriverGuard.sys  = 1,,
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll=1 ; make sure the number matches with SourceDisksNames
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NT$ARCH$
+
+[Standard.NT$ARCH$]
+%DriverGuard.DeviceDesc%=DriverGuard_Device, Root\DriverGuard ; TODO: edit hw-id
+
+[DriverGuard_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+DriverGuard.sys
+
+;-------------- Service installation
+[DriverGuard_Device.NT.Services]
+AddService = DriverGuard,%SPSVCINST_ASSOCSERVICE%, DriverGuard_Service_Inst
+
+; -------------- DriverGuard driver install sections
+[DriverGuard_Service_Inst]
+DisplayName    = %DriverGuard.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\DriverGuard.sys
+
+;
+;--- DriverGuard_Device Coinstaller installation ------
+;
+
+[DriverGuard_Device.NT.CoInstallers]
+AddReg=DriverGuard_Device_CoInstaller_AddReg
+CopyFiles=DriverGuard_Device_CoInstaller_CopyFiles
+
+[DriverGuard_Device_CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll,WdfCoInstaller"
+
+[DriverGuard_Device_CoInstaller_CopyFiles]
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll
+
+[DriverGuard_Device.NT.Wdf]
+KmdfService =  DriverGuard, DriverGuard_wdfsect
+[DriverGuard_wdfsect]
+KmdfLibraryVersion = $KMDFVERSION$
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="DriverGuard Anti-Cheat"
+DiskName = "DriverGuard Installation Disk"
+DriverGuard.DeviceDesc = "DriverGuard Device"
+DriverGuard.SVCDESC = "DriverGuard Service"

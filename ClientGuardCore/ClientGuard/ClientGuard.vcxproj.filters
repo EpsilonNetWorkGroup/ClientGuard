@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\JNIFunc">
+      <UniqueIdentifier>{66ab65fe-9063-49af-801e-afab84d9fa82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\JNIFunc">
+      <UniqueIdentifier>{38b4f158-f069-44b9-97a4-6f5099238e5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Antier">
+      <UniqueIdentifier>{532c0d82-1af5-47ba-9003-06372ff7a711}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Antier">
+      <UniqueIdentifier>{9bbfdc02-305e-4aa2-af1d-c84a5c765fc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Util">
+      <UniqueIdentifier>{11b67864-b913-4521-815e-e9aa85170f66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Util">
+      <UniqueIdentifier>{70213d2b-b6cd-401a-9237-e87743f79325}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Verifier.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FuckerVmpDebuger.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Antier\Handles.cpp">
+      <Filter>源文件\Antier</Filter>
+    </ClCompile>
+    <ClCompile Include="Antier\MemoryScan.cpp">
+      <Filter>源文件\Antier</Filter>
+    </ClCompile>
+    <ClCompile Include="Antier\PebTeb.cpp">
+      <Filter>源文件\Antier</Filter>
+    </ClCompile>
+    <ClCompile Include="Antier\PoolScan.cpp">
+      <Filter>源文件\Antier</Filter>
+    </ClCompile>
+    <ClCompile Include="JNIFunc\verifyClient.cpp">
+      <Filter>源文件\JNIFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="JNIFunc\setVerify.cpp">
+      <Filter>源文件\JNIFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="JNIFunc\crypto.cpp">
+      <Filter>源文件\JNIFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="JNIFunc\initKernel.cpp">
+      <Filter>源文件\JNIFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="JNIFunc\installService.cpp">
+      <Filter>源文件\JNIFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="JNIFunc\unInstallService.cpp">
+      <Filter>源文件\JNIFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="JNIFunc\isAdmin.cpp">
+      <Filter>源文件\JNIFunc</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\DriverGuard.cpp">
+      <Filter>源文件\Util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Errors.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="JNIFunc\net_playl_clientguard_shared_ClientGuard.h">
+      <Filter>头文件\JNIFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="Verifier.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="JNIFunc\setVerify.h">
+      <Filter>头文件\JNIFunc</Filter>
+    </ClInclude>
+    <ClInclude Include="Antier\Antier.h">
+      <Filter>头文件\Antier</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\DriverGuard.h">
+      <Filter>头文件\Util</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

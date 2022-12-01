@@ -1,0 +1,38 @@
+{
+    "schemaVersion": 1,
+    "id": "clientguard",
+    "version": "${version}",
+  
+    "name": "ClientGuard",
+    "description": "${description}",
+    "authors": [
+      "D3it7i"
+    ],
+    "contact": {
+      "homepage": "https://wiki.playl.net/",
+      "sources": "${github_url}"
+    },
+  
+    "license": "MIT",
+    "icon": "assets/modid/icon.png",
+  
+    "environment": "client",
+    "entrypoints": {
+      "client": [
+        "net.playl.clientguard.ClientGuardFabric"
+      ]
+    },
+    "mixins": [
+      "clientguard.mixins.json"
+    ],
+  
+    "depends": {
+      "fabricloader": ">=0.14.9",
+      "fabric-api": "*",
+      "minecraft": "~1.19",
+      "java": ">=17"
+    },
+    "suggests": {
+      "another-mod": "*"
+    }
+  }

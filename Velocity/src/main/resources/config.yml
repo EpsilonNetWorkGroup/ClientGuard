@@ -1,0 +1,4 @@
+# ClientGuard Config File
+Version: 1.0
+# 是否强制所有玩家必须完成ClientGuard验证
+Force-ClientGuard-Auth: false
