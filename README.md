@@ -1,6 +1,6 @@
 # ClientGuard
 ![clientguard](https://user-images.githubusercontent.com/36127740/188037484-2e04fea4-e609-471c-9733-0bd4861f6865.png)
-English | [中文](https://github.com/Dmitri233/ClientGuard/blob/main/README_CN.md)
+English | [中文](README_CN.md)
 # Why Next Generation Minecraft Anti-Cheat?
 * For normal players, no annoying false positives, but of course useless if you use it together with server-side anti-cheats
 * With the development of anti-cheat, you will be able to find and catch all types of cheats, for example finding ESP or scripted cheats is something that server-side anti-cheat can never do
