@@ -1,6 +1,6 @@
 # ClientGuard
 ![clientguard](https://user-images.githubusercontent.com/36127740/188037484-2e04fea4-e609-471c-9733-0bd4861f6865.png)
-[English](https://github.com/Dmitri233/ClientGuard/blob/main/README.md) | 中文
+[English](README.md) | 中文
 # 为什么是下一代《我的世界》反作弊?
 * 对于正常玩家, 没有烦人的误报, 当然如果你与服务器端反作弊一起使用的话则没有用(或者进行更多的开发, 使不安装反作弊的玩家受到服务器反作弊的检测)
 * 随着反作弊的开发, 您将能够发现并抓到所有类型的作弊, 例如发现ESP或脚本作弊是服务器端反作弊永远做不到的事情
