@@ -41,11 +41,13 @@ import net.playl.clientguard.shared.Sum;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class ClientGuardChat {
     private final ClientGuardVelocity plugin;
-    public static HashMap<Player, Integer> Stat = new HashMap<>();
-    public static ArrayList<Player> Flag = new ArrayList<>();
+    public final static Map<Player, Integer> Stat = new HashMap<>();
+    public final static List<Player> Flag = new ArrayList<>();
 
     public ClientGuardChat(ClientGuardVelocity plugin) {
         this.plugin = plugin;

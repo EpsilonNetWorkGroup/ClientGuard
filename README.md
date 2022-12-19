@@ -1,10 +1,11 @@
 # ClientGuard
 ![clientguard](https://user-images.githubusercontent.com/36127740/188037484-2e04fea4-e609-471c-9733-0bd4861f6865.png)
-English | [中文](README_CN.md)
+English | [中文](https://github.com/Dmitri233/ClientGuard/blob/main/README_CN.md)
 # Why Next Generation Minecraft Anti-Cheat?
-* For normal players, no annoying false positives, but of course useless if you use it together with server-side anti-cheats
+* For normal players, no annoying false positives, but of course useless if you use it together with server-side anti-cheats(Or do more development so that players who don't install client anti-cheat are anti-cheat by the server)
 * With the development of anti-cheat, you will be able to find and catch all types of cheats, for example finding ESP or scripted cheats is something that server-side anti-cheat can never do
 * You can do HWID hardware ban, so that the banned cheater can no longer play on the cheated computer
+* You can support all clients, anti-cheat on mod server!
 # Why open source
 As a reference example of client-side anti-cheating, I hope more people (service owners) will accept the installation of anti-cheating programs on the client side, In fact it's already has a lot of third-party code (mods) loaded into the player's client.  
 As well as creating an anti-cheat community between players, we could disallow players who don't have anti-cheat installed to play with those who do (similar to CSGO's priority mechanism)  

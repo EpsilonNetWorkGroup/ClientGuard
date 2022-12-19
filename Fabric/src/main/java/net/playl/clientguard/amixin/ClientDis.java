@@ -44,6 +44,6 @@ public class ClientDis {
     @Inject(at = @At("HEAD"), method = "disconnect()V")
     private void onDisconnect(CallbackInfo info) {
         // 玩家断开服务器连接, 现在清理ClientGuard初始化状态
-        ClientGuardFabric.INIT = false;
+        ClientGuardFabric.setVar(true, false);
     }
 }

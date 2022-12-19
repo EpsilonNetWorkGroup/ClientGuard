@@ -44,6 +44,6 @@ public class DebugTitle {
     @Inject(at = @At("TAIL"), method = "getLeftText")
     private void returnLeftText(CallbackInfoReturnable<List<String>> ci) {
         ci.getReturnValue().add(0, "ClientGuard Loaded! Version: "+ClientGuardFabric.VERSION);
-        ci.getReturnValue().add(0, "ClientGuard Init: "+ClientGuardFabric.INIT +" DriverGuard: "+ClientGuardFabric.KERNEL);
+        ci.getReturnValue().add(0, "ClientGuard Init: "+ClientGuardFabric.getVar(true) +" DriverGuard: "+ClientGuardFabric.getVar(false));
     }
 }

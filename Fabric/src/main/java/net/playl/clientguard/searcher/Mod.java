@@ -28,6 +28,7 @@ package net.playl.clientguard.searcher;
 import net.fabricmc.loader.api.FabricLoader;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class Mod {
     /**
@@ -35,8 +36,8 @@ public class Mod {
      * Author: D3it7i <br>
      * Date: 2022/10/4
      */
-    public static HashMap<String, String> getAllMods() {
-        HashMap<String, String> mods = new HashMap<>();
+    public static Map<String, String> getAllMods() {
+        Map<String, String> mods = new HashMap<>();
         FabricLoader.getInstance().getAllMods().forEach(mod -> mods.put(mod.getMetadata().getId(), mod.getMetadata().getVersion().getFriendlyString()));
         return mods;
     }
